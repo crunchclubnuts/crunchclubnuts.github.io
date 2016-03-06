@@ -1,0 +1,162 @@
+/**************************************************************/
+/****************** Generic Body, HTML CSS ********************/
+/**************************************************************/
+
+body, html {
+	width: 100%;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #28223e;
+    -webkit-transform: translate3d(0,0,0);
+    background-color: #fff;
+}
+
+html {
+	font-size: 16px;
+	/*-webkit-transition: .15s all;*/
+}
+
+@media screen and (max-width: 50em) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 36em) {
+    html {
+        font-size: 8px;
+    }
+}
+
+
+
+div, span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.container {
+	position: relative;
+	width: 100%; 
+	height: 100%;
+	background-color: #337147;
+	overflow: hidden;
+}
+
+.content-container {
+	width: 40rem;
+	position: absolute;
+	height: 34rem;
+	margin: auto;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.header {
+	width: 100%;
+	background-color: #fff;
+	position: relative;
+}
+
+.header-text {
+	width: 100%; 
+	text-align: center; 
+	top: 1.1rem; 
+	font-size: 1.5rem; 
+	position: absolute; 
+	color: #9a80de; 
+	font-family: 'Fredoka One'; 
+}
+
+
+
+
+
+
+.emoji-icon {
+	font-size: 12rem;
+	position: relative; 
+	width: 100%;
+	text-align: center;
+	padding-bottom: .5rem;
+}
+
+.brand-header {
+	text-align: center;
+	width: 100%;
+	position: relative;  
+	font-family: 'Fredoka One'; 
+	color: #fff; 
+	font-size: 4rem; 
+	padding-bottom: .2rem; 
+}
+
+.brand-subheader {
+	position: relative;
+	font-family: 'Dosis'; 
+	color: #fff;
+	font-size: 2rem;
+	padding-bottom: 2.5rem;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.white-subscribe-button {
+	position: relative; 
+	width: 14rem; 
+	height: 6rem; 
+	background-color: #fff; 
+	margin: 0 auto; 
+	border-radius: 1.25rem; 
+	border-bottom: .4rem solid #fff;
+	cursor: pointer;
+	margin-top: .3rem;
+}
+
+.subscribe-button {
+	position: relative; 
+	width: 14rem; 
+	height: 6rem; 
+	background-color: rgba(51, 112, 253, .7); 
+	border-bottom: .4rem solid rgba(51, 112, 253, 1);
+	border-radius: 1.25rem;
+}
+
+.subscribe-text {
+	position: absolute;
+	top: .18em;
+	text-align: center; 
+	width: 100%;
+	font-size: 4em;
+	font-family: 'Fredoka One';
+	color: #fff;
+}
+	
+
+
+/*******************************************************************/
+/************************* Miscellaneous ***************************/
+/*******************************************************************/
+
+.display-none { 
+    display: none; 
+}
+
+.selected { opacity: 1; }
+
+.unselected { opacity: .16; }
+
+/*******************************************************************/
+/***************************** Fonts *******************************/
+/*******************************************************************/
+
+@font-face {
+	font-family: 'Open Sans Light';
+	font-style: normal;
+	src: url('OpenSans-Light.ttf') format('truetype'); 
+}
