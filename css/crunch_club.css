@@ -17,6 +17,28 @@ html {
 	/*-webkit-transition: .15s all;*/
 }
 
+.white-subscribe-button {
+	position: relative;
+	width: 12rem;
+	height: 6rem; 
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 1.25rem;
+	cursor: pointer;
+	margin-top: .3rem;
+	border-bottom: .4rem solid #fff;
+}	
+	
+.subscribe-button {
+	position: relative;
+	height: 100%;
+	background-color: #458ae7;
+	background-color: rgba(51, 112, 253, .8);
+	border-bottom: .4rem solid rgba(51, 112, 253, 1);
+	border-radius: 1.25rem;
+	width: 100%;
+}
+
 @media screen and (max-width: 50em) {
     html {
         font-size: 12px;
@@ -27,13 +49,15 @@ html {
     html {
         font-size: 8px;
     }
-    .white-subscribe-button {
-    	width: 100%;
-    }
     .subscribe-button {
     	width: 100%;
     }
+    .white-subscribe-button {
+    	width: 100%;
+    }
 }
+
+
 
 
 
@@ -106,28 +130,6 @@ div, span {
 	padding-bottom: 2.5rem;
 	line-height: 1.5;
 	text-align: center;
-}
-
-.white-subscribe-button {
-	position: relative;
-	width: 12rem;
-	height: 6rem; 
-	margin: 0 auto;
-	background-color: #fff;
-	border-radius: 1.25rem;
-	cursor: pointer;
-	margin-top: .3rem;
-	border-bottom: .4rem solid #fff;
-}	
-	
-.subscribe-button {
-	position: relative;
-	height: 100%;
-	background-color: #458ae7;
-	background-color: rgba(51, 112, 253, .8);
-	border-bottom: .4rem solid rgba(51, 112, 253, 1);
-	border-radius: 1.25rem;
-	width: 100%;
 }
 
 .subscribe-button:hover {
