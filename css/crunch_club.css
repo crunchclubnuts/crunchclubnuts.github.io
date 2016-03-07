@@ -116,6 +116,10 @@ div, span {
 	width: 12rem;
 }
 
+.subscribe-button:hover {
+	opacity: .85;
+}
+
 .subscribe-text {
 	position: absolute;
 	top: .18em;
