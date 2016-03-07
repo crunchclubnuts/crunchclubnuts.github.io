@@ -102,23 +102,23 @@ div, span {
 	text-align: center;
 }
 
-.subscribe-button {
-	position: relative; 
-	width: 14rem; 
+.white-subscribe-button {
+	position: relative;
+	width: 12rem;
 	height: 6rem; 
-	margin: 0 auto; 
-	background-color: rgba(51, 112, 253, .8);
-	background-color: #5B90F6;
-	background-color: #499DF5;
-	background-color: rgba(52, 152, 219, 1);
-	background-color: rgba(255, 140, 0, 1);
-	background-color: #70b6e5;
-	background-color: #5cace2;
-	background-color: #458ae7;
+	margin: 0 auto;
+	background-color: #fff;
 	border-radius: 1rem;
 	cursor: pointer;
 	margin-top: .3rem;
-	width: 12rem;
+}	
+	
+.subscribe-button {
+	position: relative;
+	height: 100%;
+	background-color: #458ae7;
+	border-radius: 1rem;
+	width: 100%;
 }
 
 .subscribe-button:hover {
