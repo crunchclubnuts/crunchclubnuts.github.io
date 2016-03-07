@@ -109,7 +109,7 @@ div, span {
 	margin: 0 auto; 
 	background-color: rgba(51, 112, 253, .8);
 	background-color: #60AFFE;
-	border-radius: 3rem;
+	border-radius: 1rem;
 	cursor: pointer;
 	margin-top: .3rem;
 }
