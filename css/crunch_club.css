@@ -5,11 +5,11 @@
 body, html {
 	width: 100%;
 	height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #28223e;
-    -webkit-transform: translate3d(0,0,0);
-    background-color: #fff;
+	margin: 0;
+	padding: 0;
+	background-color: #28223e;
+	-webkit-transform: translate3d(0,0,0);
+	background-color: #fff;
 }
 
 html {
@@ -72,10 +72,6 @@ div, span {
 	color: #9a80de; 
 	font-family: 'Fredoka One'; 
 }
-
-
-
-
 
 
 .emoji-icon {
