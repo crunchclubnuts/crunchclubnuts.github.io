@@ -51,6 +51,10 @@ html {
     }
     .white-subscribe-button {
     	width: 90%;
+    	height: 8rem;
+    }
+    .subscribe-text {
+    	font-size: 6rem;
     }
 }
 
@@ -138,7 +142,7 @@ div, span {
 	top: .17em;
 	text-align: center; 
 	width: 100%;
-	font-size: 4em;
+	font-size: 4rem;
 	font-family: 'Fredoka One';
 	color: #fff;
 }
