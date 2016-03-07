@@ -27,6 +27,12 @@ html {
     html {
         font-size: 8px;
     }
+    .white-subscribe-button {
+    	width: 100%;
+    }
+    .subscribe-button {
+    	width: 100%;
+    }
 }
 
 
