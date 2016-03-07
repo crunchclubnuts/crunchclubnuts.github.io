@@ -113,7 +113,7 @@ div, span {
 	background-color: #fff; 
 	margin: 0 auto; 
 	border-radius: 1.25rem; 
-	border-bottom: .4rem solid #fff;
+	/*border-bottom: .4rem solid #fff;*/
 	cursor: pointer;
 	margin-top: .3rem;
 }
@@ -122,8 +122,8 @@ div, span {
 	position: relative; 
 	width: 14rem; 
 	height: 6rem; 
-	background-color: rgba(51, 112, 253, .7); 
-	border-bottom: .4rem solid rgba(51, 112, 253, 1);
+	background-color: rgba(51, 112, 253, .8); 
+	/*border-bottom: .4rem solid rgba(51, 112, 253, 1);*/
 	border-radius: 1.25rem;
 }
 
