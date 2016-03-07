@@ -108,16 +108,19 @@ div, span {
 	height: 6rem; 
 	margin: 0 auto;
 	background-color: #fff;
-	border-radius: 1rem;
+	border-radius: 1.25rem;
 	cursor: pointer;
 	margin-top: .3rem;
+	border-bottom: .4rem solid #fff;
 }	
 	
 .subscribe-button {
 	position: relative;
 	height: 100%;
 	background-color: #458ae7;
-	border-radius: 1rem;
+	background-color: rgba(51, 112, 253, .8);
+	border-bottom: .4rem solid rgba(51, 112, 253, 1);
+	border-radius: 1.25rem;
 	width: 100%;
 }
 
