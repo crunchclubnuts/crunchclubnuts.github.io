@@ -108,7 +108,7 @@ div, span {
 	height: 6rem; 
 	margin: 0 auto; 
 	background-color: rgba(51, 112, 253, .8); 
-	border-radius: 1.25rem;
+	border-radius: 3rem;
 	cursor: pointer;
 	margin-top: .3rem;
 }
