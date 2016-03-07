@@ -102,25 +102,15 @@ div, span {
 	text-align: center;
 }
 
-.white-subscribe-button {
-	position: relative; 
-	width: 14rem; 
-	height: 6rem; 
-	background-color: #fff; 
-	margin: 0 auto; 
-	border-radius: 1.25rem; 
-	/*border-bottom: .4rem solid #fff;*/
-	cursor: pointer;
-	margin-top: .3rem;
-}
-
 .subscribe-button {
 	position: relative; 
 	width: 14rem; 
 	height: 6rem; 
+	margin: 0 auto; 
 	background-color: rgba(51, 112, 253, .8); 
-	/*border-bottom: .4rem solid rgba(51, 112, 253, 1);*/
 	border-radius: 1.25rem;
+	cursor: pointer;
+	margin-top: .3rem;
 }
 
 .subscribe-text {
