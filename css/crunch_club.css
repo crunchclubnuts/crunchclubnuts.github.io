@@ -113,6 +113,7 @@ div, span {
 	border-radius: 1rem;
 	cursor: pointer;
 	margin-top: .3rem;
+	width: 12rem;
 }
 
 .subscribe-text {
