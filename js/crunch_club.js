@@ -58,9 +58,11 @@ var Muench = (function (window, document) {
         
         fn_tap_subscribe: function() {
         	
-        	$('#outer-container1').fadeIn(0);
+        	/*$('#outer-container1').fadeIn(0);
     		$('#container1').fadeIn(0);
-    		$('#container1').addClass('animated zoomIn');
+    		$('#container1').addClass('animated zoomIn');*/
+    		$('.content-container').fadeOut(0);
+    		$('.mission-container').fadeIn(0);
 				
         }, 
 		
