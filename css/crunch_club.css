@@ -42,6 +42,7 @@ html {
 	background-color: #477F59; 
 	border-bottom: .3rem solid #234f31;
 	cursor: pointer;
+	width: 30rem;
 }
 
 .purchase-button:hover {
