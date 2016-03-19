@@ -40,14 +40,11 @@ var Muench = (function (window, document) {
 		// ------------------------------------------------------
         
 		fn_check_if_first_visit: function() {
-			
-			// alert('Muench script just ran');
 
 			// home page
 			if ($(".content-container")[0]) {
 				var first = this.fn_read_cookie('crunchclubfirst');
 				if (first) {
-					alert('ok baby, we in');
 					first_page_bool = true;
 				}
 				else {
@@ -59,7 +56,6 @@ var Muench = (function (window, document) {
 			else {
 				var second = this.fn_read_cookie('crunchclubsecondary');
 				if (second) {
-					alert('ok baby, we in 2');
 					second_page_bool = true;
 				}
 				else {
