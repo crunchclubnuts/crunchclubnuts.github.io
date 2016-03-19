@@ -1,3 +1,6 @@
+var first_page_bool = false;
+var second_page_bool = false;
+
 var Muench = (function (window, document) {
 
     that = this;
@@ -25,18 +28,8 @@ var Muench = (function (window, document) {
 		// Skimmin launch
 		// ---------------------------------------------------------
         
-        $('#white-subscribe-button').on('click', this.fn_tap_subscribe.bind(this));
-        $('#subscribe-button').on('click', this.fn_tap_subscribe.bind(this));
-        $('#header-text').on('click', this.fn_tap_subscribe.bind(this));
-        
-        $('#white-juicy-button').on('click', this.fn_tap_juicy.bind(this));
-        $('#juicy-button').on('click', this.fn_tap_juicy.bind(this));
-        
+        this.fn_check_if_first_visit();
     	this.fn_convert_emoji();
-		
-		window.addEventListener('load', function() {
-		    FastClick.attach(document.body);
-		}, false);
        
     };
     
@@ -46,6 +39,57 @@ var Muench = (function (window, document) {
 		// Skimmin Core Functions
 		// ------------------------------------------------------
         
+		fn_check_if_first_visit: function() {
+			
+			// alert('Muench script just ran');
+
+			// home page
+			if ($(".content-container")[0]) {
+				var first = this.fn_read_cookie('crunchclubfirst');
+				if (first) {
+					alert('ok baby, we in');
+					first_page_bool = true;
+				}
+				else {
+					this.fn_create_cookie('crunchclubfirst', 'test', 7);
+				}
+			} 
+
+			// sign up page
+			else {
+				var second = this.fn_read_cookie('crunchclubsecondary');
+				if (second) {
+					alert('ok baby, we in 2');
+					second_page_bool = true;
+				}
+				else {
+					this.fn_create_cookie('crunchclubsecondary', 'testagain', 7);
+				}
+			}
+
+		},
+
+		fn_create_cookie: function(name, value, days) {
+			if (days) {
+				var date = new Date();
+				date.setTime(date.getTime()+(days*24*60*60*1000));
+				var expires = "; expires="+date.toGMTString();
+			}
+			else var expires = "";
+			document.cookie = name+"="+value+expires+"; path=/";
+		},
+
+		fn_read_cookie: function(name) {
+			var nameEQ = name + "=";
+			var ca = document.cookie.split(';');
+			for (var i=0;i < ca.length;i++) {
+				var c = ca[i];
+				while (c.charAt(0)==' ') c = c.substring(1,c.length);
+				if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+			}
+			return null;
+		},
+
        	fn_convert_emoji: function() {
 			
 			$(".emoji").each(function() {
@@ -55,23 +99,9 @@ var Muench = (function (window, document) {
     			$(this).html(output);
 			});
 		},
-        
-        fn_tap_subscribe: function() {
-        	
-        	/*$('#outer-container1').fadeIn(0);
-    		$('#container1').fadeIn(0);
-    		$('#container1').addClass('animated zoomIn');*/
-    		$('.content-container').fadeOut(0);
-    		$('.mission-container').fadeIn(0);
-				
-        }, 
-		
-		fn_tap_juicy: function() {
-			$('#container1').fadeOut(300);
-		},
 		
 	};
 
 	return Muench;
 
-})(window, document);	
+})(window, document);
